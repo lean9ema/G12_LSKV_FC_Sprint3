@@ -1,8 +1,7 @@
 const express = require('express');
-const path = require('path');
 const app = express();
 
-var mainRutas = require("./routers/main");
+const mainRutas = require('./routers/main ');
 
 app.use('/', (req,res)=>{
     res.sendFile();
