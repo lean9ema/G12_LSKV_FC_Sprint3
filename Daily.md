@@ -11,3 +11,8 @@
 * git clone.
 * Home con la router. 
 * fecha a terminar el home: 5/12.
+
+
+### Lean
+* Cree Repositorio y realice clone
+* Asigne tareas respectivas sobre routers y controllers a cada integrante
