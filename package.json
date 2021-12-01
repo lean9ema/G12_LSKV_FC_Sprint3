@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/lean9ema/G12_LSKV_FC_Sprint3#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {}
 }
