@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
-
+const path = require('path');
 const port = 3000;
 
 app.use(express.static('public'));
 app.set('view engine','ejs'); // Para "activar" ejs 
-app.set('views',path.resolve(__dirname,'./src/views')); // No hace falta, cuando se tiene a views en la parte principal 
+app.set('views',__dirname + '/src/views'); // No hace falta, cuando se tiene a views en la parte principal 
 
 const usersRoutes = require('./src/routers/userRoutes');
 
