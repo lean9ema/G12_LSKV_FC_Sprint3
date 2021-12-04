@@ -612,6 +612,36 @@ main article.prod-detail p {
     margin: 0px 10px;
 }
 
+/* ProductList */
+
+main.productList .products{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+main.productList .products article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    border: solid black 2px;
+    text-align: left
+}
+main.productList .products article .cat{
+    color: #666;
+}
+main.productList .products article .precio{
+    color: #BA135D;
+}
+main.productList .products article img{
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
 /* Product car *//*titulo carrito con paso*/
 main section h4.title { 
     display: flex;
@@ -1004,6 +1034,14 @@ main article.pago div img{
         font-weight: bold;
         padding: 0px 10px 0px 0px ;
     }
+    /*ProductList*/
+    main.productList .products{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    main.productList .products article{
+        width: 40%;
+    }
 
     /*carrito 4*/
 
@@ -1133,6 +1171,10 @@ main article.pago div img{
     }
     main div.Recomendaciones article { 
         width: 190px;
+    }
+    /*ProductList*/
+    main.productList .products article{
+        width: 30%;
     }
 
     /*Product car*/
