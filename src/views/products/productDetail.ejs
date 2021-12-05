@@ -38,11 +38,17 @@
 
                     <div class="stars">
                         <div class="score">
-                            <i class="far fa-star" style="color: #d4b073;"></i>
-                            <i class="far fa-star" style="color: #d4b073;"></i>
-                            <i class="far fa-star" style="color: #d4b073;"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
+                            <% for( let index = 1; index <= 5; index++ ) { %>
+
+                                <% if (index <= product.puntos) { %>
+                                    <i class="far fa-star" style="color: #d4b073;"></i>
+                                 
+                                <% }else { %>
+                                    <i class="far fa-star"></i>
+                                <% } %> 
+                            
+                            <% } %> 
+
                         </div>
                         <p> 127437 Reviews </p>
                     </div>
@@ -54,8 +60,6 @@
                             <a href="#"><i class="fas fa-circle" style="color:<%= element %>"></i></a>
                         <% }) %>
                     </div> 
-                    
-                    <p> Rojo </p>
 
                     <div class="talle">
                         <% product.talles.forEach(element => { %>

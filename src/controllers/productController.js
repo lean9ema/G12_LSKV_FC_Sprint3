@@ -7,7 +7,8 @@ let listaProducts = [
         img: 'img-ropa.jpeg',
         categoria: 'ropa',
         colores: ['red','black','olive','blue','goldenrod'],
-        talles: ['XS','S','M','L','XL']
+        talles: ['XS','S','M','L','XL'],
+        puntos: 3
     },
     {
         id:2,
@@ -17,7 +18,8 @@ let listaProducts = [
         img: 'img-ropa.jpeg',
         categoria: 'ropa',
         colores: ['red','black','olive','blue','goldenrod'],
-        talles: ['XS','S','M','L','XL']
+        talles: ['XS','S','M','L','XL'],
+        puntos: 2
     },
     {
         id:3,
@@ -27,7 +29,8 @@ let listaProducts = [
         img: 'img-ropa.jpeg',
         categoria: 'ropa',
         colores: ['red','black','olive','blue','goldenrod'],
-        talles: ['XS','S','M','L','XL']
+        talles: ['XS','S','M','L','XL'],
+        puntos: 1
     },
     {
         id:4,
@@ -37,7 +40,8 @@ let listaProducts = [
         img: 'img-ropa.jpeg',
         categoria: 'ropa',
         colores: ['red','black','olive','blue','goldenrod'],
-        talles: ['XS','S','M','L','XL']
+        talles: ['XS','S','M','L','XL'],
+        puntos: 0
     },
     {
         id:5,
@@ -47,7 +51,8 @@ let listaProducts = [
         img: 'img-ropa.jpeg',
         categoria: 'ropa',
         colores: ['red','black','olive','blue','goldenrod'],
-        talles: ['XS','S','M','L','XL']
+        talles: ['XS','S','M','L','XL'],
+        puntos: 5
     },
     {
         id:6,
@@ -57,7 +62,8 @@ let listaProducts = [
         img: 'img-ropa.jpeg',
         categoria: 'ropa',
         colores: ['red','black','olive','blue','goldenrod'],
-        talles: ['XS','S','M','L','XL']
+        talles: ['XS','S','M','L','XL'],
+        puntos:4
     }
 ]
 
