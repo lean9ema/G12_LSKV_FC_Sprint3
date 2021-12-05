@@ -10,14 +10,15 @@
         <main class="productList">
             <section class="products">
                     <% productList.forEach(element => { %>
-                        <article>
-                        <img src="/images/<%= element.img %>">
-                        <div class="descripcion">
-                        <h4> <%= element.nombre %> </h4>   
-                        <p class="cat"><%= element.categoria %> </p>
-                        <p class="precio"><%= element.precio %> </p>
-                        </div>
-                        </article>
+                        
+                            <article>
+                                <a href="/product/productDetail/<%= element.id  %> "><img src="/images/<%= element.img %>"></a>
+                                <div class="descripcion">
+                                <h4> <%= element.nombre %> </h4>   
+                                <p class="cat"><%= element.categoria %> </p>
+                                <p class="precio">$<%= element.precio %> </p>
+                                </div>
+                            </article>
                     <% }) %>
             </section>
         </main>

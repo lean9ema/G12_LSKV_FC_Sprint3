@@ -50,21 +50,17 @@
                     <p class="precio"> $<%= product.precio %>  </p>
 
                     <div class="colors"> <!-- agregar al objeto una array de colores y iterarlos con un foreach-->
-                        <a href="#"><i class="fas fa-circle" style="color: #161db5"></i></a>
-                        <a href="#"><i class="fas fa-circle" style="color: red"></i></a>
-                        <a href="#"><i class="fas fa-circle" style="color: goldenrod"></i></a>
-                        <a href="#"><i class="fas fa-circle" style="color: olive"></i></a>
-                        <!--<i class="fas fa-slash"></i> -->
+                        <% product.colores.forEach(element => { %>
+                            <a href="#"><i class="fas fa-circle" style="color:<%= element %>"></i></a>
+                        <% }) %>
                     </div> 
                     
                     <p> Rojo </p>
 
                     <div class="talle">
-                        <a href="#"> <p>XS</p> </a>
-                        <a href="#"> <p>S</p></a>
-                        <a href="#"> <p>M</p></a>
-                        <a href="#"> <p>L</p></a>
-                        <a href="#"> <P>XL</P</a>
+                        <% product.talles.forEach(element => { %>
+                            <a href="#"> <p><%= element %> </p> </a> 
+                        <% }) %>
                     </div>
 
                     <div class="guia">

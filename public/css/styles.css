@@ -622,13 +622,20 @@ main.productList .products{
     margin: 10px;
 }
 
-main.productList .products article{
+main.productList .products  article{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 10px;
     border: solid black 2px;
     text-align: left
+} 
+main.productList .products article:hover{
+    box-shadow: #666;
+}
+
+main.productList .products .descripcion{
+    padding: 10px;
 }
 main.productList .products article .cat{
     color: #666;
