@@ -9,8 +9,13 @@ app.set('views',__dirname + '/src/views'); // No hace falta, cuando se tiene a v
 
 const usersRoutes = require('./src/routers/userRoutes');
 const productRoutes = require('./src/routers/productRoutes');
+const homeRoutes = require('./src/routers/homeRoutes');
+
 app.use('/users', usersRoutes);
 app.use('/product', productRoutes);
+app.use('/', homeRoutes);
+
+
 
 app.listen (port, () =>{
     console.log(`Servidor funcionando en el puerto ${port}` )
