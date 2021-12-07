@@ -75,6 +75,9 @@ const productController = {
     },
     list: (req,res) => {
         return res.render("products/productList", {productList : listaProducts})
+    },
+    charger: (req,res) => {
+        return res.render("products/productCharger")
     }
 }
 
