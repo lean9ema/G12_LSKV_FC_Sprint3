@@ -7,14 +7,50 @@
         <%- include('../partials/header') %>
 
         <%- include('../partials/back') %>
-        <main>
+        <main class="charger">
+            <div>
+                <form action="">Nombre
+                    <label for="">
+                        <input type="text">
+                    </label>
+                    
+                    <label for="">Precio
+                        <input type="number">
+                    </label>
+                    
+                    <label for="">Descripción
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </label>
 
-            <form action="">
-                <input type="text">
-                <input type="number">
-                <input type="">
-            </form>
+                    <label for="">Imagen
+                        <input type="file">
+                    </label>
+                    
+                    <label for="">Categoria
+                        <select name="about" id="">
+                            <option value="Blusas">Blusas</option>
+                            <option value="Remeras">Remeras</option>
+                            <option value="Vestidos">Vestidos</option>
+                            <option value="Monos">Monos</option>
+                            <option value="Shorts">Shorts</option>
+                            <option value="Faldas">Faldas</option>
+                            <option value="Jeans">Jeans</option>
+                        </select>
+                    </label>
 
+                    <label for="">Color
+                        <input type="color">
+                    </label>
+                    
+                    <label for="">Talle
+                        <input type="checkbox">XS
+                        <input type="checkbox">S
+                        <input type="checkbox">M
+                        <input type="checkbox">L
+                        <input type="checkbox">XL
+                    </label>
+                </form>
+            </div>
         </main>
         <%- include('../partials/footer') %> 
     </body>  
