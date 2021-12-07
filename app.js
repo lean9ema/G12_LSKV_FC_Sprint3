@@ -11,9 +11,9 @@ const usersRoutes = require('./src/routers/userRoutes');
 const productRoutes = require('./src/routers/productRoutes');
 const homeRoutes = require('./src/routers/homeRoutes');
 
-app.use('/users', usersRoutes);
-app.use('/product', productRoutes);
 app.use('/', homeRoutes);
+app.use('/product', productRoutes);
+app.use('/users', usersRoutes);
 
 
 
