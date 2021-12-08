@@ -78,6 +78,9 @@ const productController = {
     },
     charger: (req,res) => {
         return res.render("products/productCharger")
+    },
+    edition: (req,res) => {
+        return res.render("products/productEdition")
     }
 }
 

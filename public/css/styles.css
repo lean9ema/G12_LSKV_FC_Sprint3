@@ -120,7 +120,7 @@ section div .img-banner{
     width: 100%;
 }
 
-/* Populates */
+/* Populares */
 
 .populares{
     width: 100%;
@@ -611,6 +611,48 @@ div.Recomendaciones article:hover {
 main article.prod-detail p { 
     margin: 0px 10px;
 }
+/* ProductCharger */
+main.charger{
+    display: flex;
+    justify-content: center;
+}
+
+main div form{
+    width: 100%;
+    justify-content: center;
+}
+
+main div form .form-prod-char{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    width: 60%;
+
+}
+
+main div form fieldset .legend-formulario{
+    text-align: center;
+}
+
+main div form fieldset div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div form fieldset div .checkbox-input{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
 
 /* ProductList */
 
