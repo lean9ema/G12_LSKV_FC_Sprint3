@@ -17,6 +17,6 @@ app.use('/users', usersRoutes);
 
 
 
-app.listen (port, () =>{
+app.listen (process.env.PORT || port, () =>{
     console.log(`Servidor funcionando en el puerto ${port}` )
 })
