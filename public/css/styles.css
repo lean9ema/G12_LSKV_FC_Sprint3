@@ -1,5 +1,5 @@
 * {
-    margin: 0px;
+    margin: 0px ;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
@@ -120,7 +120,7 @@ section div .img-banner{
     width: 100%;
 }
 
-/* Populares */
+/* Populates */
 
 .populares{
     width: 100%;
@@ -146,11 +146,6 @@ section div .btn-popu button{
 
 .products{
     margin-top: 1%;
-}
-
-.description{
-    text-align: center;
-    color: #666;
 }
 
 /* Main */ 
@@ -388,7 +383,6 @@ main section .cuerpo .login form button{
     
 }
 main section .cuerpo .login form button:hover{
-   
    background-color:#F8E2CF
 }
 
@@ -465,10 +459,15 @@ main .next{
     color: #fff;
     padding: 3px;
     border-radius: 5%;
-
 }
 
 /* Product Detail */
+
+div.back,
+main{ 
+    max-width: 1040px;
+    margin:auto;
+}
 
 main article.prod-detail{
     display: flex;
@@ -481,11 +480,15 @@ div.back {
 }
 
 main article a,
-main article div.cantidad,
 div.back a{
-    text-decoration: none;
+    color: black;
 }
-
+ div.guia a,
+ div.carrito a, 
+ div.locales a{ 
+    color: #a34141;
+    font-size: 12px;
+}
 div.img-container{
     position: relative;    
 }
@@ -514,11 +517,11 @@ div.slider-buttons-container{
     top: 50%;
 }
 
-
 main article p.nombre-prod {
     padding: 10px 0px 5px 0px;
     font-size: 20px;
     font-weight: bold;
+    color: rgb(53, 51, 51); 
 }
 
 main article.prod-detail div.stars { 
@@ -535,24 +538,28 @@ main article div.stars div.score i {
 
 main article div.stars p { 
     margin: 0px 10px;
-    font-style: italic;
     font-size: 12px;
 }
 
 main article p.precio{
     font-size: 1.25rem;
-    font-weight: bold;
 }
 
 main div.colors { 
     padding: 2px;    
 }
 
-main div.colors a { 
-    padding: 2px 5px;
+main p.color{ 
+    padding: 0px 0px 5px 0px;
 }
 
-main div.colors a i:hover { 
+main div.colors a{ 
+    padding: 2px 5px;
+}
+main div.colors a i{ 
+    transition: font-size 450ms;
+}
+main div.colors a i:hover{
     font-size: 25px;
 }
 
@@ -572,11 +579,36 @@ main div.talle a{
     padding: 3px 14px;
     border-radius: 5px;
     background-color: #ebebeb;
-
 }
 
 main div.guia { 
     padding-top: 5px;
+    text-decoration-line:underline;
+}
+
+main article div.cantidad{
+    margin: 5px 0px;
+}
+div.cantidad form label { 
+    margin: 0px 5px 0px 0px;
+}
+
+div.cantidad form input{
+    width: 50px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.description p.title{
+    text-align: center;
+    color: #666;
+    font-weight: bold;
+}
+
+.description p.content{ 
+    text-align: start;
+    color: rgb(82, 80, 80);
+    margin: 0;
 }
 
 main p.title-recom { 
@@ -608,103 +640,9 @@ div.Recomendaciones article a img{
 div.Recomendaciones article:hover { 
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
+
 main article.prod-detail p { 
     margin: 0px 10px;
-}
-/* ProductCharger */
-main.charger{
-    display: flex;
-    justify-content: center;
-}
-
-main div form{
-    width: 100%;
-    justify-content: center;
-}
-
-main div form .form-prod-char{
-    display: flex;
-    flex-direction: column;
-    border-radius: 30px;
-    width: 60%;
-
-}
-
-main div form fieldset .legend-formulario{
-    text-align: center;
-}
-
-main div form fieldset div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-main div form fieldset div .checkbox-input{
-    display: flex;
-    flex-direction: row;
-}
-
-
-
-
-
-
-
-
-
-
-/* ProductList */
-
-main.productList .products{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    margin: 10px;
-}
-
-main.productList .title{ 
-    display: flex;
-    position: relative;
-    justify-content:center;
-    font-size: 25px;
-    margin: 15px 0px 40px;
-}
-main.productList .title:before{
-    content: "";
-    position: absolute;
-    width: 200px;
-    height: 1px;
-    bottom: 2px;
-    border-bottom: 3px solid #BA135D;
-}
-
-main.productList .products  article{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 10px;
-    border: solid black 2px;
-    text-align: left
-} 
-main.productList .products article:hover{
-    box-shadow: #666;
-}
-
-main.productList .products .descripcion{
-    padding: 10px;
-}
-main.productList .products article .cat{
-    color: #666;
-}
-main.productList .products article .precio{
-    color: #BA135D;
-}
-main.productList .products article img{
-    width: 100%;
-    padding: 5px;
-    text-align: center;
 }
 
 /* Product car *//*titulo carrito con paso*/
@@ -1096,16 +1034,7 @@ main article.pago div img{
     }
     main article div.product-description div.description p.title { 
         font-size: 20px;
-        font-weight: bold;
-        padding: 0px 10px 0px 0px ;
-    }
-    /*ProductList*/
-    main.productList .products{
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    main.productList .products article{
-        width: 40%;
+        padding: 10px 0px 10px 0px ;
     }
 
     /*carrito 4*/
@@ -1214,10 +1143,16 @@ main article.pago div img{
     /*Register*/
 
     /* Product Detail */
-
+    main article.prod-detail .img-container{
+        width: 50%;
+    }
+    main article.prod-detail{ 
+        justify-content: stretch;
+    }
     main article div.img-container {
         display: flex;
         width: 50%;
+        height: 50%;
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -1236,10 +1171,6 @@ main article.pago div img{
     }
     main div.Recomendaciones article { 
         width: 190px;
-    }
-    /*ProductList*/
-    main.productList .products article{
-        width: 30%;
     }
 
     /*Product car*/

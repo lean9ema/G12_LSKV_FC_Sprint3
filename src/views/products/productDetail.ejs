@@ -72,20 +72,24 @@
                     </div>
                     
                     <div class="cantidad">
-                        <a href="#"> - </a>
-                        <a href="#"> 1 </a>
-                        <a href="#"> + </a>
+                        <form action="/" method="POST">
+                            <label for="cant">
+                                Cantidad: 
+                            </label>
+                            <input type="number" id="cant" name="cant" min="1" value="1">
+                        </form>
                     </div>
 
-                    <a href="#">
-                        <p>Agregar a carrito</p>
-                    </a>
-                    
-                    <a href="#">Ver locales donde esta disponible el producto</a>
-                    <br>
+                    <div class="carrito">
+                        <a href="#">Agregar a carrito</a>
+                    </div>
+                    <div class="locales">
+                        <a href="#">Ver locales donde esta disponible el producto</a>
+                    </div>   
+
                     <div class = "description">
                         <p class="title"> Descripción</p>
-                        <p> <%= product.descripcion %> 
+                        <p class="content"> <%= product.descripcion %> 
                         </p>
                     </div>
                 </div>
