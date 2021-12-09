@@ -135,7 +135,19 @@ section .popular-now{
 }
 
 section div .tittle-popu{
+    display: flex;
+    justify-content: center;
     font-size: 3em;
+    position: relative;
+}
+
+section div .tittle-popu:before {
+    width: 270px;
+    height: 1px;
+    bottom: 5px;
+    position: absolute;
+    content: "";
+    border-bottom: 3px solid #BA135D;
 }
 
 section div .btn-popu button{
@@ -183,9 +195,20 @@ main.home{
 }
 
 .estilos-productos{
-    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;    
     font-size: 3em;
     margin: 3% 0%;
+}
+
+.estilos-productos:before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    bottom: 5px; 
+    border-bottom: 3px solid #BA135D;
 }
 
 /* FOOTER */
@@ -580,6 +603,7 @@ main div.talle p {
     top: 26%; 
     left: 0%;
 }
+
 main div.talle a{ 
     position: relative;
     margin: 0px 5px;
@@ -762,7 +786,7 @@ main section h4.title:before{
     width: 200px;
     height: 1px;
     bottom: 2px;
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid #BA135D;
 }
 
 
@@ -799,13 +823,14 @@ main section .paso h2{
 
 main section .paso a { 
     z-index: 0;
+    text-decoration: none;
 }
 
 main section .paso .pasoTres,
 main section .paso .pasoCuatro,
 main section .paso .pasoDos,
 main section .paso .pasoUno{
-    background-color: red;
+    background-color: #BA135D;
     color: #fff;
 } 
 
@@ -909,7 +934,7 @@ main section .cuerpoCarrito .register {
 main section div.form { 
     display: flex;
     flex-direction: column;
-    margin: 20px 0px;
+    margin: 20px 40px;
     justify-content: space-around;
 }
 
@@ -923,6 +948,13 @@ main section div.form form label input {
     width: 90%;
 }
 
+main label div { 
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
 main div.bEnv  { 
     display: flex;
     justify-content: center;
@@ -931,7 +963,7 @@ main div.bEnv  {
 main div.bEnv button { 
     font-size: 20px;
     color: white;
-    background-color: red;
+    background-color: #BA135D;
     border-radius: 10px;
     width: 100px;
     height: 50px;
@@ -1317,6 +1349,10 @@ main article.pago div img{
     /*Product car3*/
     main section div.form{
         flex-direction: row;
+    }
+
+    div.form form { 
+        width: 35%;
     }
     
     /* Home */
