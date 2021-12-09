@@ -1,5 +1,5 @@
 * {
-    margin: 0px ;
+    margin: 0px;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
@@ -120,7 +120,7 @@ section div .img-banner{
     width: 100%;
 }
 
-/* Populates */
+/* Populares */
 
 .populares{
     width: 100%;
@@ -146,6 +146,11 @@ section div .btn-popu button{
 
 .products{
     margin-top: 1%;
+}
+
+.description{
+    text-align: center;
+    color: #666;
 }
 
 /* Main */ 
@@ -383,6 +388,7 @@ main section .cuerpo .login form button{
     
 }
 main section .cuerpo .login form button:hover{
+   
    background-color:#F8E2CF
 }
 
@@ -459,6 +465,7 @@ main .next{
     color: #fff;
     padding: 3px;
     border-radius: 5%;
+
 }
 
 /* Product Detail */
@@ -643,6 +650,102 @@ div.Recomendaciones article:hover {
 
 main article.prod-detail p { 
     margin: 0px 10px;
+}
+
+/* ProductCharger */
+main.charger{
+    display: flex;
+    justify-content: center;
+}
+
+main div form{
+    width: 100%;
+    justify-content: center;
+}
+
+main div form .form-prod-char{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    width: 60%;
+
+}
+
+main div form fieldset .legend-formulario{
+    text-align: center;
+}
+
+main div form fieldset div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div form fieldset div .checkbox-input{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+/* ProductList */
+
+main.productList .products{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+main.productList .title{ 
+    display: flex;
+    position: relative;
+    justify-content:center;
+    font-size: 25px;
+    margin: 15px 0px 40px;
+}
+main.productList .title:before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    bottom: 2px;
+    border-bottom: 3px solid #BA135D;
+}
+
+main.productList .products  article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    border: solid black 2px;
+    text-align: left
+} 
+main.productList .products article:hover{
+    box-shadow: #666;
+}
+
+main.productList .products .descripcion{
+    padding: 10px;
+}
+main.productList .products article .cat{
+    color: #666;
+}
+main.productList .products article .precio{
+    color: #BA135D;
+}
+main.productList .products article img{
+    width: 100%;
+    padding: 5px;
+    text-align: center;
 }
 
 /* Product car *//*titulo carrito con paso*/
@@ -1034,7 +1137,16 @@ main article.pago div img{
     }
     main article div.product-description div.description p.title { 
         font-size: 20px;
-        padding: 10px 0px 10px 0px ;
+        font-weight: bold;
+        padding: 0px 10px 0px 0px ;
+    }
+    /*ProductList*/
+    main.productList .products{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    main.productList .products article{
+        width: 40%;
     }
 
     /*carrito 4*/
@@ -1143,16 +1255,10 @@ main article.pago div img{
     /*Register*/
 
     /* Product Detail */
-    main article.prod-detail .img-container{
-        width: 50%;
-    }
-    main article.prod-detail{ 
-        justify-content: stretch;
-    }
+
     main article div.img-container {
         display: flex;
         width: 50%;
-        height: 50%;
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -1171,6 +1277,10 @@ main article.pago div img{
     }
     main div.Recomendaciones article { 
         width: 190px;
+    }
+    /*ProductList*/
+    main.productList .products article{
+        width: 30%;
     }
 
     /*Product car*/
