@@ -135,7 +135,19 @@ section .popular-now{
 }
 
 section div .tittle-popu{
+    display: flex;
+    justify-content: center;
     font-size: 3em;
+    position: relative;
+}
+
+section div .tittle-popu:before {
+    width: 270px;
+    height: 1px;
+    bottom: 5px;
+    position: absolute;
+    content: "";
+    border-bottom: 3px solid #BA135D;
 }
 
 section div .btn-popu button{
@@ -183,9 +195,20 @@ main.home{
 }
 
 .estilos-productos{
-    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;    
     font-size: 3em;
     margin: 3% 0%;
+}
+
+.estilos-productos:before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    bottom: 5px; 
+    border-bottom: 3px solid #BA135D;
 }
 
 /* FOOTER */
@@ -470,6 +493,12 @@ main .next{
 
 /* Product Detail */
 
+div.back,
+main{ 
+    max-width: 1040px;
+    margin:auto;
+}
+
 main article.prod-detail{
     display: flex;
     flex-direction: column;
@@ -481,11 +510,15 @@ div.back {
 }
 
 main article a,
-main article div.cantidad,
 div.back a{
-    text-decoration: none;
+    color: black;
 }
-
+ div.guia a,
+ div.carrito a, 
+ div.locales a{ 
+    color: #a34141;
+    font-size: 12px;
+}
 div.img-container{
     position: relative;    
 }
@@ -514,11 +547,11 @@ div.slider-buttons-container{
     top: 50%;
 }
 
-
 main article p.nombre-prod {
     padding: 10px 0px 5px 0px;
     font-size: 20px;
     font-weight: bold;
+    color: rgb(53, 51, 51); 
 }
 
 main article.prod-detail div.stars { 
@@ -535,24 +568,28 @@ main article div.stars div.score i {
 
 main article div.stars p { 
     margin: 0px 10px;
-    font-style: italic;
     font-size: 12px;
 }
 
 main article p.precio{
     font-size: 1.25rem;
-    font-weight: bold;
 }
 
 main div.colors { 
     padding: 2px;    
 }
 
-main div.colors a { 
-    padding: 2px 5px;
+main p.color{ 
+    padding: 0px 0px 5px 0px;
 }
 
-main div.colors a i:hover { 
+main div.colors a{ 
+    padding: 2px 5px;
+}
+main div.colors a i{ 
+    transition: font-size 450ms;
+}
+main div.colors a i:hover{
     font-size: 25px;
 }
 
@@ -566,17 +603,43 @@ main div.talle p {
     top: 26%; 
     left: 0%;
 }
+
 main div.talle a{ 
     position: relative;
     margin: 0px 5px;
     padding: 3px 14px;
     border-radius: 5px;
     background-color: #ebebeb;
-
 }
 
 main div.guia { 
     padding-top: 5px;
+    text-decoration-line:underline;
+}
+
+main article div.cantidad{
+    margin: 5px 0px;
+}
+div.cantidad form label { 
+    margin: 0px 5px 0px 0px;
+}
+
+div.cantidad form input{
+    width: 50px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.description p.title{
+    text-align: center;
+    color: #666;
+    font-weight: bold;
+}
+
+.description p.content{ 
+    text-align: start;
+    color: rgb(82, 80, 80);
+    margin: 0;
 }
 
 main p.title-recom { 
@@ -608,9 +671,11 @@ div.Recomendaciones article a img{
 div.Recomendaciones article:hover { 
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
+
 main article.prod-detail p { 
     margin: 0px 10px;
 }
+
 /* ProductCharger */
 main.charger{
     display: flex;
@@ -721,7 +786,7 @@ main section h4.title:before{
     width: 200px;
     height: 1px;
     bottom: 2px;
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid #BA135D;
 }
 
 
@@ -758,13 +823,14 @@ main section .paso h2{
 
 main section .paso a { 
     z-index: 0;
+    text-decoration: none;
 }
 
 main section .paso .pasoTres,
 main section .paso .pasoCuatro,
 main section .paso .pasoDos,
 main section .paso .pasoUno{
-    background-color: red;
+    background-color: #BA135D;
     color: #fff;
 } 
 
@@ -868,7 +934,7 @@ main section .cuerpoCarrito .register {
 main section div.form { 
     display: flex;
     flex-direction: column;
-    margin: 20px 0px;
+    margin: 20px 40px;
     justify-content: space-around;
 }
 
@@ -882,6 +948,13 @@ main section div.form form label input {
     width: 90%;
 }
 
+main label div { 
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
 main div.bEnv  { 
     display: flex;
     justify-content: center;
@@ -890,7 +963,7 @@ main div.bEnv  {
 main div.bEnv button { 
     font-size: 20px;
     color: white;
-    background-color: red;
+    background-color: #BA135D;
     border-radius: 10px;
     width: 100px;
     height: 50px;
@@ -1276,6 +1349,10 @@ main article.pago div img{
     /*Product car3*/
     main section div.form{
         flex-direction: row;
+    }
+
+    div.form form { 
+        width: 35%;
     }
     
     /* Home */

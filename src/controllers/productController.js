@@ -68,7 +68,6 @@ let listaProducts = [
 ]
 
 const productController = {
-    
     prodDetail: (req,res) =>{
         let productC = listaProducts.find(product => product.id == req.params.productId)
         return res.render("products/productDetail",{ product: productC })
@@ -81,6 +80,18 @@ const productController = {
     },
     edition: (req,res) => {
         return res.render("products/productEdition")
+    },
+    prodCart1: function(req,res) {
+        return res.render("products/productCart")
+    },
+    prodCart2: function(req,res) {
+        return res.render("products/productCart2")
+    },
+    prodCart3: function(req,res) {
+        return res.render("products/productCart3")
+    },
+    prodCart4: function(req,res) {
+        return res.render("products/productCart4")
     }
 }
 
